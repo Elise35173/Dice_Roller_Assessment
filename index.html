@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <fieldset>
+        <label for="roll_num">Number of Rolls:</label>
+        <input type="text" name="roll_num" id="roll_dice">
+        <button id="roll_button">Roll!</button>
+    </fieldset>
+    <div id="total">
+        <h1 class="sum_of_rolls"></h1>
+    </div>
+    <fieldset>
+        <label for="individual_rolls"></label>
+        <button id="show_rolls">Show All Rolls!</button>
+    </fieldset>
+    <ol class="all_rolls"></ol>
+    <script src="assets/main.js"></script>
+</body>
+</html>
