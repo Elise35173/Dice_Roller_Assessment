@@ -1,0 +1,17 @@
+.all_rolls {
+    size: 20px;
+}
+
+/* ol {
+    margin:16px;
+    padding: 5px;
+    list-style:decimal url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  }
+  
+  .all_rolls li:nth-child(1n):before {font-size: 18px;}
+  .all_rolls li:nth-child(1):before {content: "\2680";}
+  .all_rolls li:nth-child(2):before {content: "\2681";}
+  .all_rolls li:nth-child(3):before {content: "\2682";}
+  .all_rolls li:nth-child(4):before {content: "\2683";}
+  .all_rolls li:nth-child(5):before {content: "\2684";}
+  .all_rolls li:nth-child(6):before {content: "\2685";}

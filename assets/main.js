@@ -1,11 +1,11 @@
 let dieRolls = []
+let countSum = 0
 const rollButton = document.querySelector("#roll_button")
 rollButton.addEventListener("click", function() {
     console.log("Roll Button Clicked")
     let rollNum = document.querySelector("#roll_dice")
     let count = 1
     let rollSum = document.querySelector(".sum_of_rolls")
-    let countSum = 0
     while (count <= rollNum.value) {
         let rdmRolls = Math.floor(Math.random() * 6 ) + 1
         count++
@@ -40,3 +40,21 @@ rollButton.addEventListener("click", function() {
     console.log(dieRolls)
 })
 
+const showRollsButton = document.querySelector("#show_rolls")
+showRollsButton.addEventListener("click", function() {
+    console.log("Show Button Clicked");
+    let showRolls = document.querySelector(".all_rolls")
+    let listTag = "<ol>"
+    for (let count = 0; count < dieRolls.length; count++) {
+        listTag += "<li>" + dieRolls[count] + "</li>"
+    }
+    listTag += "</ol>"
+    showRolls.innerHTML = listTag
+})
+
+const resetButton = document.querySelector("#reset_button")
+resetButton.addEventListener("click", function() {
+    console.log("Game Reset")
+    document.querySelector(".sum_of_rolls").innerHTML = ""
+    document.querySelector(".all_rolls").innerHTML = ""
+})
