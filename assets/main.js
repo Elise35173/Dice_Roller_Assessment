@@ -99,4 +99,7 @@ resetButton.addEventListener("click", function() {
     console.log("Game Reset")
     document.querySelector(".sum_of_rolls").innerHTML = ""
     document.querySelector(".all_rolls").innerHTML = ""
+    document.querySelector("#roll_dice").innerHTML = ""
+    countSum = 0
+    dieRolls = []
 })
